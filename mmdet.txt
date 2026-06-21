@@ -1,0 +1,10 @@
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection
+sudo docker build -t mmdet_wacv docker/
+
+
+
+sudo docker run --gpus all --shm-size=16g -it \
+  -v /home/admin-cidis/airix_dataset:/workspace/dataset \
+  -v $(pwd):/workspace/mmdetection \
+  mmdet_wacv /bin/bash
