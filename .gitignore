@@ -2,7 +2,11 @@
 
 dataset/*
 
-airix*/*
+airix*/
 
 
 mmdetection/*
+
+
+rt*
+yolo*
